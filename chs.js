@@ -351,7 +351,7 @@ var cnItems = {
     'slower growth of the time-based production nerf': '较慢的增长，基于时间的生产削弱',
     'Settings tab added.': '设置选项卡已添加。',
     'Display matter gain': '显示物质收益',
-    'Each dimension is': '每个维度以 ',
+    'Each dimension is': '每个维度比上一维慢 ',
     'dimensions collapses each second': '维度每秒钟都会收缩',
     'Dimensional Dimensions boost all previous dimensions.': '次元维度会增加所有以前的维度。',
     'Contemplating the Infinite': '考虑无限',
@@ -628,7 +628,7 @@ var cnPrefix = {
     "% more Gravitons from": "% 更多的引力子来自",
     "× more Neutrons from": "×更多的中子来自",
     "× more Photons from Photonic": "× 更多的光子来自光学",
-    "× slower than the previous one": "× 比上一个慢",
+    "× slower than the previous one": "x",
     "× slower": "× 更慢",
     "": "",
     "": "",
@@ -755,7 +755,7 @@ var cnExcludePostfix = [
 //小数点：([\d\.]+)
 //原样输出的字段：(.+)
 var cnRegReplace = new Map([
-    [/^All production above (\d+) is x^(\d+)$/,'所有大于 $1 的产量变为 x^$2'],
+    [/^All production above (\d+) is x^([\d\.]+)$/,'所有大于 $1 的产量变为 x^$2'],
     [/^requires ([\d\.]+) more research points$/, '需要$1个研究点'],
     [/^Beat Photonic Challenge (\d+) to unlock!$/, '击败光子挑战 $1 即可解锁！'],
     [/^Unlock (\d+)th dimension$/, '解锁第 $1 维度'],
