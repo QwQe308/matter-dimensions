@@ -930,7 +930,7 @@ function respec_vacuumic_tree() {
         if (player.achievements['91'].complete) default_limit = default_limit.mult(1e10);
 
         if (player.vacuum_energy.gt(default_limit) && !player.achievements['108'].complete) {
-            let result = confirm("Are you sure you want to reset Space Theorem tree? You will lose Vacuum Energy due to the reduced resource limit!\n(This warning can be disabled in Settings)");
+            let result = confirm("您确定要重置空间定理树吗？ 由于资源限制减少，您将失去真空能量！\n（可以在设置中禁用此警告）");
             if (!result) return;
         }
     }
