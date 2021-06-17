@@ -28,7 +28,7 @@ var cnItems = {
     //统计
         'You completed': '你完成了',
         'You have played for': '你玩了',
-        'You spent': '你花费了',
+        'You spent': '你度过了',
         'Your matter filled': '你的物质填满了',
         'Your maximum Gravitons is': '你的最大引力子数量是',
     //debuff
@@ -738,7 +738,7 @@ var cnExcludeWhole = [
     /^(\d+)th 真空维度$/,
     /^(\d+)th 中子维度$/,
     /^(\d+)th 引力维度$/,
-    /^(\d+)th 尺寸维度$/,
+    /^(\d+)th 次元维度$/,
     /^(\d+)th 光子维度$/,
     /^(\d+)th 物质维度$/,
     /^解锁自动购买器(.+)$/,
@@ -757,7 +757,7 @@ var cnExcludePostfix = [
 var cnRegReplace = new Map([
     [/^All production above (\d+)is x^([\d\.]+)$/,'所有大于 $1 的产量变为 x^$2'],
     [/^requires ([\d\.]+) more research points$/, '需要$1个研究点'],
-    [/^Beat Photonic Challenge (\d+) to unlock!$/, '击败光子挑战 $1 即可解锁！'],
+    [/^Beat Photonic Challenge (\d+) to unlock!$/, '通过光子挑战 $1 即可解锁！'],
     [/^Unlock (\d+)th dimension$/, '解锁第 $1 维度'],
     [/^(\d+) \- buy maximum amount of (\d+)th Dimensions on screen$/, '$1 \- 购买最大屏幕上的第 $2 维度'],
     [/^to (\d+)nd Dimensions$/, '到第 $1 维度'],
