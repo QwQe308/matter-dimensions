@@ -292,7 +292,7 @@ var cnItems = {
     'All Photonic Dimensions gain a bonus based on Gravitonic and Neutronic Challenges completed': '所有光子维度都会根据完成的引力和中子挑战获得奖励',
     'Replication': '复制',
     'Quadratic Growth': '二次增长',
-    'I\'m So Meta': '我太变态了',
+    'I\'m So Meta': '我太元了',
     'If you perform a Vacuumic right now, the new temperature would be': '如果您现在执行真空操作，则新温度将',
     'Gravitonic dimensions': '引力维度',
     'Gravitons upon Gravitonic reset': '重力重设后的重力',
@@ -755,16 +755,16 @@ var cnExcludePostfix = [
 //小数点：([\d\.]+)
 //原样输出的字段：(.+)
 var cnRegReplace = new Map([
-    [/^All production above (\d+) is x^([\d\.]+)$/,'所有大于 $1 的产量变为 x^$2'],
+    [/^All production above (\d+)is x^([\d\.]+)$/,'所有大于 $1 的产量变为 x^$2'],
     [/^requires ([\d\.]+) more research points$/, '需要$1个研究点'],
     [/^Beat Photonic Challenge (\d+) to unlock!$/, '击败光子挑战 $1 即可解锁！'],
     [/^Unlock (\d+)th dimension$/, '解锁第 $1 维度'],
-    [/^(\d+) \- buy maximum amount of (\d+)th Dimensions on screen$/, '$1 \- 购买屏幕上第 $2 维度的最大数量'],
+    [/^(\d+) \- buy maximum amount of (\d+)th Dimensions on screen$/, '$1 \- 购买最大屏幕上的第 $2 维度'],
     [/^to (\d+)nd Dimensions$/, '到第 $1 维度'],
     [/^(\d+) Genes$/, '$1 基因'],
     [/^(\d+) Photon$/, '$1 光子'],
     [/^(\d+) Photons$/, '$1 光子'],
-    [/^([\d\.]+) seconds$/, '$1 光子'],
+    [/^([\d\.]+) seconds$/, '$1 秒'],
     [/^to (\d+)th Dimension$/, '到第 $1 维度'],
     [/^Usages: (\d+)\/$/, '用途：$1\/'],
     [/^workers: (\d+)\/$/, '工人：$1\/'],
