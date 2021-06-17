@@ -755,7 +755,7 @@ var cnExcludePostfix = [
 //小数点：([\d\.]+)
 //原样输出的字段：(.+)
 var cnRegReplace = new Map([
-    [/^All production above (\d+) is x^(\d+)$/,'所有大于 $1 的产量变为 x^$2']
+    [/^All production above (\d+) is x^(\d+)$/,'所有大于 $1 的产量变为 x^$2'],
     [/^requires ([\d\.]+) more research points$/, '需要$1个研究点'],
     [/^Beat Photonic Challenge (\d+) to unlock!$/, '击败光子挑战 $1 即可解锁！'],
     [/^Unlock (\d+)th dimension$/, '解锁第 $1 维度'],
