@@ -198,7 +198,8 @@ var cnItems = {
     'Challenges are now checked for completion before autobuyer actions.': '现在，在自动购买器起效之前，将检查挑战是否完成。',
     'of any resource':' 资源(对所有资源)',
     'dimensions of each kind': ' 级维度',
-    'Dimensions are working as if there are x^0.5of them': '维度数量以 x^0.5 的效率起效<p>汉化优化:QwQ(qq3174905334)</p>',
+    'Dimensions are working as if there are x^': '维度数量以 x^',
+    'of them':' 的效率起效<p>汉化优化:QwQ(qq3174905334)</p>'
     'You need to break Infinity in order to complete Vacuumic challenges.': '你需要打破无限才能完成真空挑战。',
     'You need to get a certain amount of matter to complete Photonic challenges.': '你需要获得一定数量的物质来完成光子挑战。',
     'You need to get a certain amount of matter to complete Neutronic challenges.': '你需要获得一定数量的物质来完成中子挑战。',
@@ -331,7 +332,7 @@ var cnItems = {
     'Boost all Matter Dimensions based on bought 1st': '提升所有基于购买的第一物质维度',
     'Boost all Photonic dimensions based on Photonic': '基于光子增强所有光子维度',
     'Alternate Default': '替换默认',
-    'All costs are x^': '所有成本 x^',
+    'All costs are x^': '所有成本变为 x^',
     'ago (real-time': '前（现实时间',
     'Achievements with an additional effect have a different color.': '具有额外效果的成就具有不同的颜色。',
     'Achievement multiplier is increased based on current Temperature.': '根据当前温度增加成就倍数。',
