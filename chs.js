@@ -199,7 +199,7 @@ var cnItems = {
     'of any resource':' 资源(对所有资源)',
     'dimensions of each kind': ' 级维度',
     'Dimensions are working as if there are x^': '维度数量以 x^',
-    'of them':' 的效率起效<p>汉化优化:QwQ(qq3174905334)</p>'
+    'of them':' 的效率起效<p>汉化优化:QwQ(qq3174905334)</p>',
     'You need to break Infinity in order to complete Vacuumic challenges.': '你需要打破无限才能完成真空挑战。',
     'You need to get a certain amount of matter to complete Photonic challenges.': '你需要获得一定数量的物质来完成光子挑战。',
     'You need to get a certain amount of matter to complete Neutronic challenges.': '你需要获得一定数量的物质来完成中子挑战。',
