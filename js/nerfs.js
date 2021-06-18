@@ -1,6 +1,6 @@
 function update_challenges_power() {
 //tickspeed nerf
-    player.challenge_strength_1 = 1000;
+    player.challenge_strength_1 = 256;
     // Photonic Challenge 7: time is 256x slower
     if (player.challenges['p7'].inC()) player.challenge_strength_1 *= 256;
     // p11: time is faster
@@ -8,7 +8,7 @@ function update_challenges_power() {
     // Photonic Challenge 4: light slows down time
     if (player.challenges['p4'].inC()) player.challenge_strength_1 *= power_light_time().toInt();
     // g24: light speeds up time
-    if (player.upgrades['g24'].is_active()) player.challenge_strength_1 /= player.upgrades['g24'].get_effect().toInt();
+    if (player.upgrades['g24'].is_active()) player.challenge_strength_1 /= player.upgrades['g24'].get_effect().toInt()**0.8;
     // "Bullet Time" experiment: time is slower
     if (player.evolutions['b12'].is_active()) player.challenge_strength_1 *= player.experiments['bullet_time'].get_nerf().toInt();
 
