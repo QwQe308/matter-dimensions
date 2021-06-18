@@ -1,5 +1,6 @@
 function update_challenges_power() {
-    player.challenge_strength_1 = 256;//1000;
+//tickspeed nerf
+    player.challenge_strength_1 = 1000;
     // Photonic Challenge 7: time is 256x slower
     if (player.challenges['p7'].inC()) player.challenge_strength_1 *= 256;
     // p11: time is faster
@@ -17,9 +18,9 @@ function update_challenges_power() {
     // g12: more production is protected
     if (player.upgrades['g12'].is_active()) player.challenge_addinfo_2 = player.upgrades['g12'].get_effect();
     
-    player.challenge_strength_2 = 0.2;
+    player.challenge_strength_2 = 0.125;
     // g11: power is increased base on unspent Gravitons
-    player.challenge_strength_2 = player.upgrades['g11'].get_effect().toInt();
+    player.challenge_strength_2 = player.upgrades['g11'].get_effect().toInt()**1.2;
     // "Controlled Reaction" experiment: production multipliers are reduced
     if (player.evolutions['b12'].is_active()) player.challenge_strength_2 *= player.experiments['controlled_reaction'].get_nerf().toInt();
 
@@ -78,13 +79,13 @@ function update_challenges_power() {
     adj_time_passed /= power_population_time().toInt();
 
     player.challenge_strength_7 = new BigNumber(3);
-    player.challenge_strength_7 = player.challenge_strength_7.pow(Math.pow((adj_time_passed / 1000) + 1, 0.5) * Math.pow(2, adj_time_passed / 60000) - 1);
+    player.challenge_strength_7 = player.challenge_strength_7.pow(Math.pow((adj_time_passed / 1000) + 1, 0.5) * Math.pow(2, adj_time_passed / 60000) - 1)**1.25;
 
-    player.challenge_strength_8 = 100;
+    player.challenge_strength_8 = 20;
 
-    player.challenge_strength_9 = 2;
+    player.challenge_strength_9 = 1.75;//to make this game possible
 
     player.challenge_strength_10 = 0.5;
 
-    player.challenge_strength_11 = 0.5;
+    player.challenge_strength_11 = 0.4;
 }
