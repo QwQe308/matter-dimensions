@@ -1,6 +1,6 @@
 function update_challenges_power() {
 //tickspeed nerf
-    player.challenge_strength_1 = 256;
+    player.challenge_strength_1 = 100;
     // Photonic Challenge 7: time is 256x slower
     if (player.challenges['p7'].inC()) player.challenge_strength_1 *= 256;
     // p11: time is faster
