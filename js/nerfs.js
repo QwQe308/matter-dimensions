@@ -83,7 +83,7 @@ function update_challenges_power() {
 
     player.challenge_strength_8 = 20;
 
-    player.challenge_strength_9 = 1.65;//to make this game possible
+    player.challenge_strength_9 = 1.75;//to make this game possible
 
     player.challenge_strength_10 = 0.5;
 
