@@ -236,7 +236,7 @@ functions["upg_g10_power"] = (amt) => {
     else return big(10);
 }
 functions["upg_g11_power"] = (amt) => {
-    if (amt == 0) return big(0.2);
+    if (amt == 0) return big(0.2).pow(1.2);
     let base_gravitons = player.gravitons;
     // n06: gravitonic upgrades are based on max gravitons
     base_gravitons = player.upgrades['n06'].get_effect();
@@ -247,7 +247,7 @@ functions["upg_g11_power"] = (amt) => {
     // Gravitonic Challenge 1 reward: gravitonic upgrades in top-left block are 10% more powerful
     if (player.challenges['g1'].completed) base_gravitons = base_gravitons.pow(1.1);
 
-    return big(1).subtract(big(8).div(base_gravitons.add(10).log10().pow(2).add(9)));
+    return big(1).subtract(big(8).div(base_gravitons.add(10).log10().pow(2).add(9))).pow(1.2);
 }
 functions["upg_g12_power"] = (amt) => {
     if (amt == 0) return player.upgrades['g10'].get_effect();
