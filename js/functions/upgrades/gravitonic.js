@@ -250,8 +250,8 @@ functions["upg_g11_power"] = (amt) => {
     if (base_gravitons.lt(8)) return base_gravitons.mult(0.01).add(0.22);
     if (base_gravitons.lt(28)) return base_gravitons.subtract(8).mult(0.005).add(0.3);
     if (base_gravitons.lt(128)) return base_gravitons.subtract(28).mult(0.001).add(0.4);
-    else return big(0.5).add(base_gravitons.subtract(128).div(base_gravitons.add(999)).mult(0.5));
-}
+    else return big(1).subtract(big(8).div(base_gravitons.add(1).log10().pow(2).add(10)));
+
 functions["upg_g12_power"] = (amt) => {
     if (amt == 0) return player.upgrades['g10'].get_effect();
 
