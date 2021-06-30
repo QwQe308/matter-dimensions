@@ -236,6 +236,7 @@ functions["upg_g10_power"] = (amt) => {
     else return big(10);
 }
 functions["upg_g11_power"] = (amt) => {
+    if (amt == 0) return big(0.2);
     let base_gravitons = player.gravitons;
     // n06: gravitonic upgrades are based on max gravitons
     base_gravitons = player.upgrades['n06'].get_effect();
