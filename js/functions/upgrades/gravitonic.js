@@ -260,7 +260,7 @@ functions["upg_g12_power"] = (amt) => {
     // Gravitonic Challenge 1 reward: gravitonic upgrades in top-left block are 10% more powerful
     if (player.challenges['g1'].completed) base_amt = base_amt * 1.1;
 
-    return big(2).pow(base_amt+1).mult(10);
+    return big(1.74).pow(base_amt+1.5).mult(10);
 }
 functions["upg_g13_power"] = (amt) => {
     let base_amt = amt;
