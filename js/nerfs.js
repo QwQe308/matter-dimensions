@@ -20,7 +20,7 @@ function update_challenges_power() {
     
     player.challenge_strength_2 = 0.125;
     // g11: power is increased base on unspent Gravitons
-    player.challenge_strength_2 = player.upgrades['g11'].get_effect().toInt()**1.2;
+    player.challenge_strength_2 = player.upgrades['g11'].get_effect().toInt();
     // "Controlled Reaction" experiment: production multipliers are reduced
     if (player.evolutions['b12'].is_active()) player.challenge_strength_2 *= player.experiments['controlled_reaction'].get_nerf().toInt();
 
