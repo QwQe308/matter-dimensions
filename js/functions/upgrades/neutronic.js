@@ -91,8 +91,8 @@ functions["upg_n02_power"] = (amt) => {
     // Vacuumic Challenge 3 reward: n02 is 33% more powerful
     if (player.challenges['v3'].completed) effective_amt *= 1.33;
 
-    if (effective_amt <= 2) return big(100).mult(big(2).pow(-effective_amt)).pow(1.2);
-    else return big(24).div(effective_amt-1).add(1).pow(1.2);
+    if (effective_amt <= 2) return big(100).mult(big(2).pow(-effective_amt));
+    else return big(24).div(effective_amt-1).add(1);
 }
 functions["upg_n03_power"] = (amt) => {
     if (amt == 0) return big(10);
