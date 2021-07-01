@@ -415,7 +415,7 @@ functions["upg_p31_power"] = (amt) => {
     // Vacuumic Challenge 7 reward: get a free level of all Photonic repeatable upgrades
     if (player.challenges['v7'].completed) base_amt = base_amt.add(0.7);
 
-    return big(2).mult(base_amt.add(1));
+    return big(2).pow(base_amt.div(2).add(1));
 }
 functions["upg_p32_power"] = (amt) => {
     if (amt == 0) return big(1);
@@ -432,7 +432,7 @@ functions["upg_p33_power"] = (amt) => {
     return big(1);
 }
 functions["upg_p34_power"] = (amt) => {
-    return player.photons.pow(0.7).min(player.photons.add(1).log(10).pow(4).mult(1e3)).add(2);
+    return player.photons.pow(0.7).min(player.photons.add(1).log(10).pow(4).mult(1e3)).add(2).pow(0.75);
 }
 functions["upg_p35_power"] = (amt) => {
     if (amt == 0) return big(2);
