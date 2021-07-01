@@ -87,7 +87,7 @@ functions["upg_n01_power"] = (amt) => {
     return big(2).pow(base_reward - 1);
 }
 functions["upg_n02_power"] = (amt) => {
-    let effective_amt = amt.div(2);
+    let effective_amt = amt/2;
     // Vacuumic Challenge 3 reward: n02 is 33% more powerful
     if (player.challenges['v3'].completed) effective_amt *= 1.33;
 
