@@ -74,7 +74,7 @@ functions["upg_p22_cost"] = (amt) => {
     // Neutronic Challenge 4 reward: the cost of all Photonic upgrades is reduced
     base_cost = base_cost.pow(player.challenges['n4'].get_effect());
 
-    return base_cost;
+    return base_cost.div(1.5);
 }
 functions["upg_p23_cost"] = (amt) => {
     let base_pow = 0.75;
