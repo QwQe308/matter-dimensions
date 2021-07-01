@@ -432,7 +432,7 @@ functions["upg_p33_power"] = (amt) => {
     return big(1);
 }
 functions["upg_p34_power"] = (amt) => {
-    return player.photons.pow(0.7).min(player.photons.add(1).log(10).pow(4).mult(1e3)).add(2).pow(0.75);
+    return player.photons.pow(0.7).min(player.photons.add(1).log(10).pow(4).mult(1e3)).add(2).pow(0.5);
 }
 functions["upg_p35_power"] = (amt) => {
     if (amt == 0) return big(2);
